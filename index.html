@@ -187,24 +187,24 @@
               <div class="pop-over-content">
                   <div class="pop-over-container">
                       <ul class="pop-over-ul">
-                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk">Featured</a></li>
-                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk">Price:Low to High</a></li>
-                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk">Price:High to Low</a></li>
-                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk">Avg.Customer Review</a></li>
-                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk">Newest Arrivals</a></li>
-                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk">Best Sellers</a></li>
+                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk" data-sort="featured">Featured</a></li>
+                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk" data-sort="lowToHigh">Price:Low to High</a></li>
+                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk" data-sort="highToLow">Price:High to Low</a></li>
+                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk" data-sort="customerReview">Avg.Customer Review</a></li>
+                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk" data-sort="newest">Newest Arrivals</a></li>
+                         <li class="dropdown-item"><a href="#" class="drpdwn-lnk" id="dropdown-lnk" data-sort="bestSellers">Best Sellers</a></li>
                       </ul>
                   </div>
               </div>
            </div>
 
-           <div class="desk-main-body">
+           <div class="desk-main-body" style="background-color: white; position: relative;">
                 <div class="right-section">
                     <div class="right-section-inner">
                         <span class="right-section-comp">
                              <div class="main-slot">
                                  <div class="result-header">
-                                    <div class="result-haeder-container">
+                                    <div class="result-header-container" style="background-color: white ;">
                                         <span class="result-header-span">
                                             <div class="result-header-inner">
                                                 <div class="result-section-content">
@@ -215,8 +215,295 @@
                                         </span>
                                     </div>
                                  </div>
+                                 <div class="mob-sectioncn " id="mobSection">
+                                
+                                </div>
+                                <div class="pagenation">
+                                    <div class="pagenation-container">
+                                        <div class="pagenation-content">
+                                            <span class="pagenation-span">
+                                                <span class="previous" id="previousButton">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" focusable="false" aria-hidden="true"><path d="M5.874.35a1.28 1.28 0 011.761 0 1.165 1.165 0 010 1.695L3.522 6l4.113 3.955a1.165 1.165 0 010 1.694 1.28 1.28 0 01-1.76 0L0 6 5.874.35z"></path></svg>
+                                                    Previous
+                                                </span>
+                                                <span class="pagenation1 active">1</span>
+                                                <span class="pagenation1">2</span>
+                                                <span class="pagenation1">3</span>
+                                                <span class="next active" id="nextButton">
+                                                    Next
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" focusable="false" aria-hidden="true"><path d="M2.126.35a1.28 1.28 0 00-1.761 0 1.165 1.165 0 000 1.695L4.478 6 .365 9.955a1.165 1.165 0 000 1.694 1.28 1.28 0 001.76 0L8 6 2.126.35z"></path></svg>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                              </div>
                         </span>
+                    </div>
+                </div>
+                <div class="left-section">
+                    <div class="left-section-container">
+                        <div class="left-section-content">
+                            <div class="left-section-inner">
+                                <div class="left-list">
+                                    <div class="deals-n-discount">
+                                        <div class="dd-header">
+                                            <span class="dd-header-text">Deals & Discounts</span>
+                                        </div>
+                                        <ul class="dd-ul">
+                                            <span class="dd-ul-rel">
+                                                <span class="dd-li1">All Discounts</span>
+                                                <span class="dd-li1">Today's Deals</span>
+                                            </span>
+                                        </ul>
+                                    </div>
+                                    <div class="delivery-day">
+                                        <div class="dd-header">
+                                            <span class="dd-header-text">Delivery Day</span>
+                                        </div>
+                                        <ul class="dd-ul">
+                                            <span class="dd-ul-rel">
+                                                <span class="dday-text-container">
+                                                    <div class="dday-square">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <i class="sq-icon"></i>
+                                                            <span class="checkbox-label"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text">Get It  Today</span>
+                                                </span>
+                                                <span class="dday-text-container">
+                                                    <div class="dday-square">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <i class="sq-icon"></i>
+                                                            <span class="checkbox-label"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text">Get It  by Tomorrow</span>
+                                                </span>
+                                                <span class="dday-text-container">
+                                                    <div class="dday-square">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <i class="sq-icon"></i>
+                                                            <span class="checkbox-label"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text">Get It  in 2 Days</span>
+                                                </span>
+                                            </span>
+                                        </ul>
+                                    </div>
+                                    <div class="departments">
+                                        <div class="dd-header">
+                                            <span class="dd-header-text">Category</span>
+                                        </div>
+                                        <ul class="dd-ul">
+                                            <span class="dd-ul-rel">
+                                                <span class="dept-text">Smartphones & Basic Mobiles</span>
+                                                <span class="dept-text spacing">Smartphones</span>
+                                                <span class="dept-text spacing">Basic Mobiles</span>
+                                            </span>
+                                        </ul>
+                                    </div>
+                                    <div class="stars">
+                                        <div class="dd-header">
+                                            <span class="dd-header-text">Customer Review</span>
+                                        </div>
+                                        <ul class="dd-ul">
+                                            <span class="dd-ul-rel">
+                                                <section class="stars4">
+                                                    <i class="star-icon"></i>
+                                                    <span class="up">& Up</span>
+                                                </section>
+                                            </span>
+                                        </ul>
+                                    </div>
+                                    <div class="delivery-day brands">
+                                        <div class="dd-header">
+                                            <span class="dd-header-text">Brands</span>
+                                        </div>
+                                        <ul class="dd-ul brand-ul">
+                                            <span class="dd-ul-rel brand-ul-rel">
+                                                <span class="dday-text-container brand-container" data-brand="Samsung">
+                                                    <div class="dday-square brand-square">
+                                                        <label>
+                                                            <input type="checkbox" class="brand-input">
+                                                            <i class="sq-icon brnd-icon"></i>
+                                                            <span class="checkbox-label brnd-txt-lb"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text brand-text">Samsung</span>
+                                                </span>
+                                                <span class="dday-text-container brand-container " data-brand="realme">
+                                                    <div class="dday-square brand-square">
+                                                        <label>
+                                                            <input type="checkbox" class="brand-input">
+                                                            <i class="sq-icon brnd-icon"></i>
+                                                            <span class="checkbox-label brnd-txt-lb"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text brand-text">realme</span>
+                                                </span>
+                                                <span class="dday-text-container brand-container" data-brand="Redmi">
+                                                    <div class="dday-square brnd-square">
+                                                        <label>
+                                                            <input type="checkbox" class="brand-input">
+                                                            <i class="sq-icon brnd-icon"></i>
+                                                            <span class="checkbox-label brnd-txt-lb"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text brand-text">Redmi</span>
+                                                </span>
+                                                <span class="dday-text-container brand-container" data-brand="Oneplus">
+                                                    <div class="dday-square brnd-square">
+                                                        <label>
+                                                            <input type="checkbox" class="brand-input">
+                                                            <i class="sq-icon brnd-icon"></i>
+                                                            <span class="checkbox-label brnd-txt-lb"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text brand-text">OnePlus</span>
+                                                </span>
+                                                <span class="dday-text-container brand-container" data-brand="POCO">
+                                                    <div class="dday-square brnd-square">
+                                                        <label>
+                                                            <input type="checkbox" class="brand-input">
+                                                            <i class="sq-icon brnd-icon"></i>
+                                                            <span class="checkbox-label brnd-txt-lb"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text brand-text">POCO</span>
+                                                </span>
+                                                <span class="dday-text-container brand-container" data-brand="iQOO">
+                                                    <div class="dday-square brnd-square">
+                                                        <label>
+                                                            <input type="checkbox" class="brand-input">
+                                                            <i class="sq-icon brnd-icon"></i>
+                                                            <span class="checkbox-label brnd-txt-lb"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text brand-text">iQOO</span>
+                                                </span>
+                                                <span class="dday-text-container brand-container" data-brand="Apple">
+                                                    <div class="dday-square brnd-square">
+                                                        <label>
+                                                            <input type="checkbox" class="brand-input">
+                                                            <i class="sq-icon brnd-icon"></i>
+                                                            <span class="checkbox-label brnd-txt-lb"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text brand-text">Apple</span>
+                                                </span>
+                                            </span>
+                                        </ul>
+                                    </div>
+                                    <div class="price">
+                                        <div class="deals-n-header">
+                                            <span class="dd-header-text">Price</span>
+                                        </div>
+                                        <div class="price-container">
+                                            <div class="price-content">
+                                                <form action="/s" class="price-form">
+                                                    <div class="price-sec">
+                                                        <label class="price-num">
+                                                            <span class="price-text">₹145</span>
+                                                        </label>
+                                                        <span class="dash">
+                                                              <span class="price-text">-</span>
+                                                        </span>
+                                                        <label class="price-num">
+                                                            <span class="price-text">₹176,800+</span> 
+                                                        </label>
+                                                    </div>
+                                                    <div class="price-sec">
+                                                        <div class="price-slider">
+                                                            <div class="idk-cont">
+                                                                <input type="range" class="pr-slider" value="0" min="0" max="189" step="1" aria-valuetext="₹145">
+                                                            </div>
+                                                            <div class="slider-line">
+                                                                <input type="range" class="pr-slider pslid" value="189" min="0" max="189" step="1" aria-valuetext="₹176,800+" style="z-index: 0; background: linear-gradient(to right, rgb(187, 191, 191) 0%, rgb(187, 191, 191) 0%, rgb(0, 113, 133) 0%, rgb(0, 113, 133) 100%, rgb(187, 191, 191) 100%, rgb(187, 191, 191) 100%);">
+                                                            </div>
+                                                        </div>
+                                                        <div class="go">
+                                                            <span class="go-button-base">
+                                                                <span class="go-button-inner">
+                                                                    <input type="submit" class="go-btn-input">
+                                                                    <span class="button-text">
+                                                                        <span class="gobtn">Go</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="departments">
+                                        <div class="dd-header">
+                                            <span class="dd-header-text">Item Condition</span>
+                                        </div>
+                                        <ul class="dd-ul">
+                                            <span class="dd-ul-rel">
+                                                <span class="dept-text ">New</span>
+                                                <span class="dept-text ">Renewed</span>
+                                            </span>
+                                        </ul>
+                                    </div>
+                                    <div class="delivery-day">
+                                        <div class="dd-header">
+                                            <span class="dd-header-text">Cellcular Technology</span>
+                                        </div>
+                                        <ul class="dd-ul">
+                                            <span class="dd-ul-rel">
+                                                <span class="dday-text-container">
+                                                    <div class="dday-square">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <i class="sq-icon"></i>
+                                                            <span class="checkbox-label"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text">2G</span>
+                                                </span>
+                                                <span class="dday-text-container">
+                                                    <div class="dday-square">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <i class="sq-icon"></i>
+                                                            <span class="checkbox-label"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text">3G</span>
+                                                </span>
+                                                <span class="dday-text-container">
+                                                    <div class="dday-square">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <i class="sq-icon"></i>
+                                                            <span class="checkbox-label"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text">4G</span>
+                                                </span>
+                                                <span class="dday-text-container">
+                                                    <div class="dday-square">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <i class="sq-icon"></i>
+                                                            <span class="checkbox-label"></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="dday-text">5G</span>
+                                                </span>
+                                            </span>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
            </div>

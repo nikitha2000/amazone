@@ -1,0 +1,106 @@
+{
+    "products": [
+      {
+        "image": "/assets/iqoo.jpg",
+        "description": "iQOO Neo9 Pro 5G (Conqueror Black, 8GB RAM, 256 Storage) | Snapdragon 8 Gen 2 Processor, Supercomputing Chip Q1, Flagship Level Sony IMX920 Camera",
+        "stars": 1137,
+        "reviews": "5k+ bought in the past",
+        "price": {
+          "current": "37,999",
+          "original": "44,999",
+          "discount": "16% off"
+        }
+      },
+      {
+        "image": "/assets/galaxym05.jpg",
+        "description": "Samsung Galaxy M05 (Mint Green,4GB RAM,64 GB Storage) | 50MP Dual Camera | Bigger 6.7 HD+ Display | 5000mAh Battery | 25w Fast Charging",
+        "stars": 343,
+        "reviews": "5k+ bought in past month",
+        "price": {
+          "current": "6,499",
+          "original": "9,999",
+          "discount": "35% off"
+        }
+      },
+      {
+        "image":"/assets/m15.jpg",
+        "description":"Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display | 50MP Triple Cam | 6000mAh Battery",
+        "stars":181,
+        "reviews":"5k+ bought in past month",
+        "price":{
+            "current":"11,499",
+            "original":"16,999",
+            "discount":"29% off"
+        }
+      },
+      {
+        "image":"/assets/m35.jpg",
+        "description":"Samsung Galaxy M35 5G (Daybreak Blue,6GB RAM, 128GB Storage)| Corning Gorilla Glass Victus+ | AnTuTu Score 595K+ | Vapour Cooling Chamber",
+        "stars":3520,
+        "reviews":"5k+ bought in past month",
+        "price":{
+            "current":"14,999",
+            "original":"24,999",
+            "discount":"39% off"
+        }
+      },
+      {
+        "image":"/assets/m14.jpg",
+        "description":"Samsung Galaxy M14 4G (Arctic Blue,4GB,64GB)| 50MP Triple Cam | 5000mAh Battery | Snapdragon 680 Processor | 2 Gen. OS Upgarde & 4 Year Security Update",
+        "stars":403,
+        "reviews":"2k+ bought in past month",
+        "price":{
+            "current":"8,191",
+            "original":"13,999",
+            "discount":"41% off"
+        }
+      },
+      {
+        "image":"/assets/a55.jpg",
+        "description":"Samsung Galaxy A55 5G (Awesome Iceblue, 8GB RAM, 128GB Storage) | Metal Frame | 50 MP Main Camera (OIS) | Nightography | IP67 | Corning Gorilla Glass Victus+ ",
+        "stars":284,
+        "reviews":"400+ bought in past month",
+        "price":{
+            "current":"39,999",
+            "original":"42,999",
+            "discount":"7% off"
+        }
+      },
+      {
+        "image":"/assets/nazro.jpg",
+        "description":"realme NARZO N61 (Marble Black,6GB RAM+128GB Storage) 90Hz Eye Comfort Display | IP54 Dust & Water Resistance | 48-Month Fluency | Charger in The Box ",
+        "stars":615,
+        "reviews":"5k+ bought in past month",
+        "price":{
+            "current":"8,498",
+            "original":"10,999",
+            "discount":"23% off"
+        }
+      },
+      {
+        "image":"/assets/12x.jpg",
+        "description":"realme 12X 5G (Woodland Green,8GB RAM, 128GB Storage)",
+        "stars":633,
+        "reviews":"1k+ bought in past month",
+        "price":{
+            "current":"12,498",
+            "original":"18,999",
+            "discount":"34% off"
+        }
+      },
+      {
+        "image":"/assets/n63.jpg",
+        "description":"realme NARZO N63 (Twilight Purple,4GB RAM+64GB Storage) 45W Fast Charge| 5000mAh Durable Battery | 7.74mm Ultra Slim ",
+        "stars":798,
+        "reviews":"4k+ bought in past month",
+        "price":{
+            "current":"8,498",
+            "original":"9,999",
+            "discount":"15% off"
+        }
+      }
+      
+    ]
+  }
+  
+  
