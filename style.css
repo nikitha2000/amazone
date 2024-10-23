@@ -16,6 +16,7 @@ body{
     min-height: 100%;
     font-size: 14px;
     line-height: 20px;
+    overflow-x: hidden;
 }
 
 header{
@@ -2646,4 +2647,485 @@ header{
 
 .brnd-icon.active{
     border: 2px solid #007185;
+}
+
+.mobile-view{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .desktop-view{
+        display: none;
+    }
+
+    .mobile-view{
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .mob-header-container{
+        position: relative;
+        z-index: 200;
+        font-family: inherit;
+        font-size: 12px;
+        line-height: 1em;
+        min-width: 200px;
+    }
+
+    .mob-header1{
+      display: flex;
+      position: relative;
+      z-index: inherit;
+      height: 48px;
+      width: 100%;
+      border-bottom: 1px solid #232f3e;
+      background-color: #232f3e;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+    .mbh1-left{
+        flex-shrink: 0;
+        flex-flow: row nowrap;
+        display: flex;
+        position: relative;
+        width: auto;
+    }
+
+    .mbh1-right{
+        flex-flow: row-reverse wrap;
+        overflow: hidden;
+        min-width: 60px;
+        display: flex;
+        position: relative;
+        width: auto;
+    }
+
+    .mb-a{
+        float: left;
+        padding: 14px 14px;
+    }
+
+    .mb-a-i{
+        display: block;
+        width:20px;
+        height:20px;
+        background-position: -20px -378px;
+        background-image: url(/assets/mobimg.png);
+        background-size: 275px;
+        background-repeat: no-repeat;
+        text-indent: -500px;
+        overflow: hidden;
+    }
+
+    .hd-logo1{
+        margin-left: auto;
+        position: relative;
+        float: left;
+        z-index: 20;
+        margin-top: 13px;
+    }
+
+    .amzn-lg{
+        clear: both;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .amzn-lg-base{
+        background-image: url(/assets/mobimg.png);
+        background-size: 275px;
+        float: left;
+        text-indent: -500px;
+        /* padding: 10px 40px 0 20px; */
+        background-position: -10px -50px;
+        width: 80px;
+        height: 27px;
+        background-repeat: no-repeat;
+    }
+
+    .amzn-logo-ext{
+        background-image: url(/assets/mobimg.png);
+        background-size: 275px;
+        float: left;
+        display: none;
+        background-repeat: no-repeat;
+    }
+
+    .amzn-logo-locale{
+        display: block;
+        background-position: -160px -209px;
+        width: 14px;
+        height: 16px;
+        direction: ltr;
+        float: left;
+        margin: 2px 0 0 1px;
+        font-size: 13.5px;
+        color: #fff;
+        line-height: 14px;
+        padding-top: 1px;
+    }
+    
+    .mbh1-right{
+        flex-flow: row-reverse wrap;
+        overflow: hidden;
+        min-width: 60px;
+        display: flex;
+        position: relative;
+        width: auto;
+    }
+
+    .right-sign{
+        order: 2;
+    }
+
+    .mb-sgn-txt{
+        display: flex;
+        margin-left: 5px;
+        line-height: 48px;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .rght-mk{
+        order: 1;
+        display: flex;
+        padding: 9px 0 12px 4px;
+        position: relative;
+        width: 39px;
+    }
+    
+    .rght-mk-i{
+        order: 2;
+        background-image: url(/assets/mobimg.png);
+        background-size: 275px;
+        display: block;
+        background-position: -141px -300px;
+        width: 35px;
+        height: 27px;
+    }
+    
+    .mb-cart{
+        padding-left: 7px;
+        order: 0;
+        display: flex;
+        padding: 10px 18px 11px 12px;
+        font-family: inherit;
+        text-decoration: none;
+    }
+
+    .nav-cart{
+        order:2;
+        width: 37px;
+    }
+
+    .nav-icon{
+        background-position: -10px -240px;
+        width: 37px;
+        height: 27px;
+        position: static;
+        background-image: url(/assets/mobimg.png);
+        background-size: 275px;
+        display: block;
+    }
+
+    .nav-cart-count{
+        padding: 0 0 0 6px;
+        font-size: 16px;
+        color: #f08804;
+        display: block;
+        text-align: center;
+        line-height: 10px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .nav-searchbar{
+        display: flex;
+        height: 50px;
+    }
+
+    .searchbar-form{
+        background: #232f3e;
+        display: block;
+        padding: 2px 10px 5px 10px;
+        position: relative;
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+        margin-bottom: 0;
+        flex: 1;
+        z-index: inherit;
+    }
+
+    .nav-search-fill{
+        width: auto;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .nav-srch-field{
+        border-radius: 8px 8px 8px 8px;
+        height: 44px;
+        margin: 0;
+        position: relative;
+        background: #fff;
+    }
+
+    .search-nav{
+       border-radius: 8px 8px 8px 8px;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       direction: ltr;
+       display: block;
+       padding: 0 95px 0 10px;
+       color: #000;
+       font-size: 15px;
+       font-family: inherit;
+       border: 0;
+       outline: 0;
+       box-shadow: 0 1px 0 0 rgba(255, 255, 255, .5), inset 0 1px 0 0 rgba(0, 0, 0, .07); 
+    }
+
+    .nav-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        display: flex;
+        width: auto;
+    }
+
+    .nav-subm{
+        background: #febd69;
+        border:8px 8px 8px 8px;
+        position: relative;
+        height: 44px;
+        width: 50px;
+        margin: 2px 10px 5px 5px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .inpt{
+        border-radius: 8px 8px 8px 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 10;
+        border: 0;
+        background-color: transparent;
+        text-indent: -1000px;
+        line-height: 1px;
+    }
+
+    .mb-srch-icn{
+        background-image: url(/assets/serchm.png);
+        background-size: 275px;
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        pointer-events: none;
+        background-position: -73px -239px;
+        width: 27px;
+        height: 25px;
+        --webkit-filter: invert(100%);
+        background-repeat: no-repeat;
+    }
+
+    .mb-srch-icn::before{
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .mob-header3{
+        background-color: #37475A;
+        height: 44px;
+        width: 100%;
+    }
+
+    .mob-header3-container{
+        float: left;
+        padding: 12px 10px 12px 10px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .lction-img{
+        background-position: -75px -340px;
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin-right: 5px;
+        background-image: url(/assets/serchm.png);
+        background-size: 275px;
+        background-repeat: no-repeat;
+    }
+
+    .lction-address{
+        float: left;
+        height: 20px;
+        display:block;
+        width: 85%;
+    }
+
+    .address-text{
+        float: left;
+        clear: both;
+        font-size: 13px;
+        line-height: 20px;
+        color: #fff;
+        font-family: inherit;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .mob-body{
+        width: 100vw;
+        position: relative;
+    }
+
+    .mob-body-container{
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(12, 1fr);
+        padding-right: 4px;
+        display: grid;
+        align-items: stretch;
+        justify-items: stretch;
+        overflow: visible;
+        align-content: flex-start;
+        width: calc(100vw - 8px + 4px);
+        margin: 0 0 0 4px;
+        padding: 0;
+    }
+
+    .mob-body-header{
+        margin-left: -4px;
+        margin-right: -4px;
+        padding-left: 0;
+        padding-right: 0;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        overflow-x: hidden;
+        transition: transform .2s linear;
+        grid-column: 1 / -1;
+        border-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .mbdy-hdr-cont{
+        margin-bottom: 8px !important;
+        height: calc(100% - 8px);
+    }
+    
+    .header-nav-container{
+        display: block;
+        position: relative;
+    }
+
+    .header-toolbar{
+        margin-bottom: 0;
+        min-height: 0;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 1px 2px 0 rgba(17, 17, 17, .15);
+        padding: 0;
+        transition: .2s linear;
+    }
+
+    .left-scroller{
+        display: flex;
+        align-items: center;
+        overflow-y: hidden;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .scroller-content1{
+        padding-left: 8px;
+        margin-right: 4px;
+        flex-shrink: 0;
+        white-space: nowrap;
+        margin-bottom: 0 !important;
+    }
+
+    .scroll-a{
+        font-size: 14px !important;
+        line-height: 20px !important;
+        text-decoration: none;
+        color: #007185;
+        margin-right: 8px;
+        margin-left: 4px;
+        padding: 6px 0;
+        display: inline-block;
+    }
+
+    .prime-icon{
+        vertical-align: middle !important;
+        display: inline-block;
+    }
+
+    .prime-i{
+        margin-right: 4px;
+        width: 4.2rem;
+        height: 1.2rem;
+        background-position: -13.8rem -7.3rem;
+        background-image: url(/assets/prime.png);
+        vertical-align: baseline;
+        margin-bottom: -.175rem;
+        background-position: 51.2rem 25.6rem;
+        background-repeat: no-repeat;
+        
+    }
+
+    .prime-btn{
+      line-height: 0 !important;
+      vertical-align: middle !important;
+      display: inline-block;
+    }
+
+    .prime-btn::after{
+        content: url(/assets/prbutton.svg);
+        line-height: 0 !important;
+        font-size: 14px;
+    }
+
+    .scroll-b{
+        height: 32px;
+        margin: 0 4px 0 0;
+        display: flex;
+        align-items: center;
+        border: .1rem solid #f4f4f4;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        padding: 9px;
+    }
+
+    .great{
+        font-size: 14px;
+        line-height: 20px;
+        color: #0f1111;
+
+    }
+
+    .right-filter{
+        float: right !important;
+    }
+
 }

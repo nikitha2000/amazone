@@ -1,36 +1,14 @@
 {
     "products": [
       {
-        "image": "/assets/iqoo.jpg",
-        "description": "iQOO Neo9 Pro 5G (Conqueror Black, 8GB RAM, 256 Storage) | Snapdragon 8 Gen 2 Processor, Supercomputing Chip Q1, Flagship Level Sony IMX920 Camera",
-        "stars": 1137,
-        "reviews": "5k+ bought in the past",
-        "price": {
-          "current": "37,999",
-          "original": "44,999",
-          "discount": "16% off"
-        }
-      },
-      {
-        "image": "/assets/galaxym05.jpg",
-        "description": "Samsung Galaxy M05 (Mint Green,4GB RAM,64 GB Storage) | 50MP Dual Camera | Bigger 6.7 HD+ Display | 5000mAh Battery | 25w Fast Charging",
-        "stars": 343,
-        "reviews": "5k+ bought in past month",
-        "price": {
-          "current": "6,499",
-          "original": "9,999",
-          "discount": "35% off"
-        }
-      },
-      {
-        "image":"/assets/m15.jpg",
-        "description":"Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display | 50MP Triple Cam | 6000mAh Battery",
-        "stars":181,
-        "reviews":"5k+ bought in past month",
+        "image":"/assets/iph15.jpg",
+        "description":"Apple iPhone15 (128GB)-Blue",
+        "stars":2332,
+        "reviews":"300+ bought in past month",
         "price":{
-            "current":"11,499",
-            "original":"16,999",
-            "discount":"29% off"
+          "current":"66,900",
+          "original":"79,900",
+          "discount":"16% off"
         }
       },
       {
@@ -45,6 +23,28 @@
         }
       },
       {
+        "image":"/assets/i16.jpg",
+        "description":"Apple iPhone 16(128 GB) - Black",
+        "stars":48,
+        "price":{
+          "current":"79,900",
+          "original":"",
+          "discount":""
+
+        }
+      },
+      {
+        "image": "/assets/iqoo.jpg",
+        "description": "iQOO Neo9 Pro 5G (Conqueror Black, 8GB RAM, 256 Storage) | Snapdragon 8 Gen 2 Processor, Supercomputing Chip Q1, Flagship Level Sony IMX920 Camera",
+        "stars": 1137,
+        "reviews": "5k+ bought in the past",
+        "price": {
+          "current": "37,999",
+          "original": "44,999",
+          "discount": "16% off"
+        }
+      },
+      {
         "image":"/assets/m14.jpg",
         "description":"Samsung Galaxy M14 4G (Arctic Blue,4GB,64GB)| 50MP Triple Cam | 5000mAh Battery | Snapdragon 680 Processor | 2 Gen. OS Upgarde & 4 Year Security Update",
         "stars":403,
@@ -53,6 +53,17 @@
             "current":"8,191",
             "original":"13,999",
             "discount":"41% off"
+        }
+      },
+      {
+        "image":"/assets/13c.jpg",
+        "description":"Redmi 13c 5G (Startrail Silver, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display",
+        "stars":9259,
+        "reviews":"5k+ bought in past month",
+        "price":{
+          "current":"8,749",
+          "original":"13,999",
+          "discount":"38% off"
         }
       },
       {
@@ -78,6 +89,28 @@
         }
       },
       {
+        "image":"/assets/red12.jpg",
+        "description":"Redmi 12 (Jade Black,6GB RAM, 128GB Storage) Without Offer",
+        "stars":9,
+        "reviews":"400+ bought in past month",
+        "price":{
+          "current":"9,397",
+          "original":"15,999",
+          "discount":"41% off"
+        }
+      },
+      {
+        "image": "/assets/galaxym05.jpg",
+        "description": "Samsung Galaxy M05 (Mint Green,4GB RAM,64 GB Storage) | 50MP Dual Camera | Bigger 6.7 HD+ Display | 5000mAh Battery | 25w Fast Charging",
+        "stars": 343,
+        "reviews": "5k+ bought in past month",
+        "price": {
+          "current": "6,499",
+          "original": "9,999",
+          "discount": "35% off"
+        }
+      },
+      {
         "image":"/assets/12x.jpg",
         "description":"realme 12X 5G (Woodland Green,8GB RAM, 128GB Storage)",
         "stars":633,
@@ -86,6 +119,28 @@
             "current":"12,498",
             "original":"18,999",
             "discount":"34% off"
+        }
+      },
+      {
+        "image":"/assets/a3x.jpg",
+        "description":"Redmi A3X (Olive Green, 3GB RAM, 64GB Storage) | Premium Halo Design | 90Hz Display | Powerful Octa Core Processor",
+        "stars":95,
+        "reviews":"2k+ bought in past month",
+        "price":{
+          "current":"6,435",
+          "original":"9,999",
+          "discount":"36% off"
+        }
+      },
+      {
+        "image":"/assets/m15.jpg",
+        "description":"Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display | 50MP Triple Cam | 6000mAh Battery",
+        "stars":181,
+        "reviews":"5k+ bought in past month",
+        "price":{
+            "current":"11,499",
+            "original":"16,999",
+            "discount":"29% off"
         }
       },
       {
@@ -98,8 +153,183 @@
             "original":"9,999",
             "discount":"15% off"
         }
+      },
+      {
+        "image":"/assets/nord.jpg",
+        "description":"OnePlus Nord CE4 Lite 5G(Super Silver, 8GB RAM, 128GB Storage)",
+        "stars":2672,
+        "reviews":"5k+ bought in past month",
+        "price":{
+          "current":"19,998",
+          "original":"20,999",
+          "discount":"5% off"
+        }
+      },
+      {
+        "image":"/assets/ce3.jpg",
+        "description":"OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)",
+        "stars":58353,
+        "reviews":"2k+ bought in past month",
+        "price":{
+          "current":"15,961",
+          "original":"19,999",
+          "discount":"20% off"
+        }
+      },
+      {
+        "image":"/assets/12r.jpg",
+        "description":"OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)",
+        "stars":3820,
+        "reviews":"4k+ bought in past month",
+        "price":{
+          "current":"42,999",
+          "original":"45,999",
+          "discount":"7% off"
+        }
+      },
+      {
+        "image":"/assets/i13.jpg",
+        "description":"Apple iPhone 13(128GB) - Pink",
+        "stars":30585,
+        "reviews":"5k+ bought in past month",
+        "price":{
+          "current":"42,999",
+          "original":"59,600",
+          "discount":"28% off"
+        }
+      },
+      {
+        "image":"/assets/poco1.jpg",
+        "description":"POCO C65 (Pastel Blue 4GB RAM 128GB Storage)",
+        "stars":2912,
+        "reviews":"5k+ bought in past month",
+        "price":{
+          "current":"6999",
+          "original":"10,999",
+          "discount":"36% off"
+        }
+      },
+      {
+        "image":"/assets/poco2.jpg",
+        "description":"POCO C61 Ethereal Blue 4GB RAM 64GB ROM",
+        "stars":66,
+        "reviews":"4k+ bought in past month",
+        "price":{
+          "current":"6,299",
+          "original":"8,999",
+          "discount":"30% off"
+        }
+      },
+      {
+        "image":"/assets/poco3.jpg",
+        "description":"POCO M6 5G (Orion Blue,6GB RAM,128GB Storage)",
+        "stars":2033,
+        "reviews":"4k+ bought in past month",
+        "price":{
+          "current":"9,499",
+          "original":"11,999",
+          "discount":"32% off"
+        }
+      },
+      {
+        "image":"/assets/poco4.jpg",
+        "description":"POCO X6 Neo 5G (Martian Orange,8GB RAM, 128GB Storage) | Dimensity 6080 Processor | 5000 mAh Battery",
+        "stars":264,
+        "reviews":"4k+ bought in past month",
+        "price":{
+          "current":"12,999",
+          "original":"19,999",
+          "discount":"35% off "
+        }
+      },
+      {
+        "image":"/assets/iq1.jpg",
+        "description":"iQOO Z9s Pro 5G (Luxe Marble,8Gb Ram, 128Gb Storage) | Snapdragon 7 Gen 3 Processor | 120 Hz",
+        "stars":1021,
+        "reviews":"5k+ bought in past month",
+        "price":{
+          "current":"24,998",
+          "original":"29,999",
+          "discount":"17% off"
+        }
+      },
+      {
+        "image":"/assets/s23.jpg",
+        "description":"Samsung Galaxy S23 Ultra AI Smartphone (Cream, 12GB,256GB Storage)",
+        "stars":2079,
+        "reviews":"5k+ bought in past month",
+        "price":{
+          "current":"74,999",
+          "original":"1,49,999",
+          "discount":"50% off"
+        }
+      },
+      {
+        "image":"/assets/10t.jpg",
+        "description":"Redmi Note 10T 5G (Mint Green,4GB RAM, 64GB Storage) | Dual5G ",
+        "stars":102101,
+        "reviews":"400+ bought in past month",
+        "price":{
+          "current":"12,999",
+          "original":"16,999",
+          "discount":"24% off"
+        }
+      },
+      {
+        "image":"/assets/vivo.jpg",
+        "description":"Vivo T3x 5G (Celestial Green, 128 GB)(6 GB RAM)",
+        "stars":39,
+        "reviews":"1k+ bought in past month",
+        "price":{
+          "current":"13,998",
+          "original":"18,999",
+          "discount":"26% off"
+        }
+      },
+      {
+        "image":"/assets/nothing.jpg",
+        "description":"Nothing Phone 2a 5G (White, 8GB RAM,256GB Storage)",
+        "stars":706,
+        "reviews":"400+ bought in past month",
+        "price":{
+          "current":"23,980",
+          "original":"27,999",
+          "discount":"41% off"
+        }
+      },
+      {
+        "image":"/assets/tp.jpg",
+        "description":"TECHNO POP 9 5G Aurora Cloud, 4GB+64GB | Segment's 1st 48MP Sony AI Camera",
+        "stars":65,
+        "reviews":"1k+ bought in past month",
+        "price":{
+          "current":"9,499",
+          "original":"11,999",
+          "discount":"21% off"
+        }
+      },
+      {
+        "image":"/assets/i16p.jpg",
+        "description":"Apple iPhone 16 Pro (128 GB) - Black Titanium",
+        "stars":18,
+        "reviews":"200+ bought in past month",
+        "price":{
+          "current":"1,19,900",
+          "original":"",
+          "discount":""
+        }
+      },
+      {
+        "image":"/assets/pm6.jpg",
+        "description":"POCO M6 5G (Gigantic Black,4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G processor",
+        "stars":2033,
+        "reviews":"50+ bought in past month",
+        "price":{
+          "current":"9,499",
+          "original":"12,999",
+          "discount":"27% off"
+        }
       }
-      
     ]
   }
   
