@@ -28,8 +28,8 @@
         "stars":48,
         "price":{
           "current":"79,900",
-          "original":"",
-          "discount":""
+          "original":"0",
+          "discount":"0"
 
         }
       },
@@ -315,8 +315,8 @@
         "reviews":"200+ bought in past month",
         "price":{
           "current":"1,19,900",
-          "original":"",
-          "discount":""
+          "original":"0",
+          "discount":"0"
         }
       },
       {

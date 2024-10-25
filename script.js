@@ -359,3 +359,380 @@ fetchProductData();
 
 // ------------------------------------------------------------------------------------------------------------
 
+const mobileFilters = document.querySelectorAll('.amzn-a');
+let chosenBrandList = [];
+let allProducts = []; 
+const sortingOptions = document.querySelectorAll('.amzn-a[data-sort]');
+let currentSortOrder=''
+
+
+async function loadProductData() {
+    try {
+        const response = await fetch('mobile.json'); 
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        allProducts = data.products; 
+
+        allProducts.forEach(product => {
+            if (!product.description) {
+                console.warn('Product missing description:', product);
+            }
+        });
+
+        displayProducts(allProducts); 
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+    }
+}
+
+function displayProducts(products) {
+    const mobSectionContainer = document.getElementById('mobRepeat'); 
+    mobSectionContainer.innerHTML = ''; // Clear previous content
+
+    products.forEach(product => {
+        const productHTML = `
+            <div class="mob-sections">
+                <div class="mob-containers">
+                    <div class="mob-contents">
+                        <div class="mob-inners">
+                            <div class="mob-reals">
+                                <div class="puisg-rows">
+                                    <div class="mob-imgs">
+                                        <div class="mob-img-inners">
+                                            <div class="mob-img-containers">
+                                                <div class="mob-img-relatives">
+                                                    <div class="mob-img-fins">
+                                                        <img src="${product.image}" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mob-detailss">
+                                        <div class="mob-details-inners">
+                                            <div class="mob-details-spacing">
+                                                <div class="mob-name">
+                                                    <h2 class="mob-hed2">
+                                                        <a href="#" class="mob-hed2-a">
+                                                            <span class="mob-hed2-span">${product.description}</span>
+                                                        </a>
+                                                    </h2>
+                                                </div>
+                                                <div class="mob-stars-review">
+                                                    <div class="stars">
+                                                        <span class="star-content">
+                                                            <span class="star-img">
+                                                                <a href="#" class="star-img-a">
+                                                                    <div class=star-nbr>4.3</div>
+                                                                    <i class="starig"></i>
+                                                                    <i class="a-icon"></i>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                        <span class="star-numbers">(${product.stars})</span>
+                                                    </div>
+                                                    <div class="reviews">
+                                                        <span class="review-num">${product.reviews}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="pdc-row">
+                                                    <div class="prow-col1">
+                                                        <div class="prow-col1-inner">
+                                                            <div class="price-container">
+                                                                <div class="great-ind">
+                                                                    <a href="#" class="great-ind-img">
+                                                                        <span class="great-ind-span">
+                                                                            <span class="grtind-spn2">
+                                                                                <span class="badge-text">Great Indian Festival</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="inr-price">
+                                                                    <div class="a-row">
+                                                                        <a href="#" class="mrpice-a">
+                                                                            <span class="a-price-new">
+                                                                                <span class="a-offscreen" style="font-size: 12px;">₹</span>
+                                                                                <span class="a-offscreen">${product.price.current}</span>
+                                                                            </span>
+                                                                            <div class="old-price">
+                                                                                <span class="mrp-price">M.R.P:</span>
+                                                                                <span class="tp-price">
+                                                                                    <span class="a-off">₹${product.price.original}</span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <span class="a-letter-space"></span>
+                                                                        <span style="color:#565959;">${product.price.discount}</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="delivery">
+                                                                <div class="delivery-container">
+                                                                    <div class="delivery-prime">
+                                                                        <span class="delivery-prime-span">
+                                                                            <span class="delivery-prime-span2">
+                                                                                <i class="prime-i"></i>
+                                                                            </span>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="arw">
+                                                                        <span class="free-delivery">
+                                                                            <span class="a-color-base">FREE delivery</span>
+                                                                            <span class="delivery-date">Wed, 23 Oct</span>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="arw">
+                                                                        <span class="fastest-delivery">
+                                                                            <span class="fstdel">Or fastest delivery</span>
+                                                                            <span class="delivery-date">Today</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Service-install">
+                                                                <div class="serinst">
+                                                                    <span>Service: Installation</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="add-to-cart">
+                                                                <div class="addtcrt-container">
+                                                                    <div class="addcrt-content">
+                                                                        <div class="acart">
+                                                                            <div class="cart-container">
+                                                                                <div class="cart-fv">
+                                                                                    <span class="cart-kjf">
+                                                                                        <div class="mfj">
+                                                                                            <span class="mkfj">
+                                                                                                <span class="button-inner">
+                                                                                                    <button class="button-text">Add to Cart</button>
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="colors">
+                                                                <div class="colors-container">
+                                                                    <div class="colors-content" style="border-color: #111;">
+                                                                        <span class="circles-spn" style="background-color: black;">
+                                                                            <span class="clr-fill"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="colors-content" style="border-color: white;">
+                                                                        <span class="circles-spn" style="background-color: silver;">
+                                                                            <span class="clr-fill"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prow-col2">
+                                                        <div class="prow-col2-inner"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+  
+        mobSectionContainer.innerHTML += productHTML;
+  
+    });
+}
+// -------------------------------------------------------------------------------------------------------------------
+
+// function filterProducts() {
+//     let filteredProducts;
+
+//     if (chosenBrandList.length === 0) {
+//         filteredProducts = allProducts; 
+//     } else {
+//         filteredProducts = allProducts.filter(product => 
+            
+//             chosenBrandList.some(chosenBrand => 
+//                 product.description &&
+//                 product.description.toLowerCase().includes(chosenBrand.toLowerCase())
+//             )
+       
+        
+//     );
+
+//     }
+    
+//     displayProducts(filteredProducts); 
+// }
+
+//----------------------------------------------------------------------------
+function filterProducts() {
+    let filteredProducts;
+
+    if (chosenBrandList.length === 0) {
+        filteredProducts = allProducts; 
+    } else {
+        filteredProducts = allProducts.filter(product => {
+           
+            if (product.description) {
+                return chosenBrandList.some(chosenBrand => 
+                    product.description.toLowerCase().includes(chosenBrand.toLowerCase())
+                );
+            } else {
+                console.warn('Product missing description:', product);
+                return false; 
+            }
+        });
+    }
+    return filteredProducts; 
+}
+
+
+//-------------------------------------------------------------------
+function sortProducts(products) {
+    if (currentSortOrder === 'lowToHigh') {
+        products.sort((a, b) => {
+            const priceA = parseInt(a.price.current.replace(/[^0-9]/g, ''));
+            const priceB = parseInt(b.price.current.replace(/[^0-9]/g, ''));
+            return priceA - priceB;
+        });
+    } else if (currentSortOrder === 'highToLow') {
+        products.sort((a, b) => {
+            const priceA = parseInt(a.price.current.replace(/[^0-9]/g, ''));
+            const priceB = parseInt(b.price.current.replace(/[^0-9]/g, ''));
+            return priceB - priceA;
+        });
+    }
+}
+//-------------------------------------------------------------------
+
+mobileFilters.forEach(filter => {
+    filter.addEventListener('click', function() {
+        const brand = this.getAttribute('data-brand'); 
+
+        if (chosenBrandList.includes(brand)) {
+            this.classList.remove('active');
+            chosenBrandList = chosenBrandList.filter(b => b !== brand); 
+        } else {
+            this.classList.add('active'); 
+            chosenBrandList.push(brand); 
+        }
+
+        const filteredProducts = filterProducts();
+
+        sortProducts(filteredProducts.length > 0 ? filteredProducts : allProducts);
+        displayProducts(filteredProducts.length > 0 ? filteredProducts : allProducts);
+    });
+});
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+const showResultsButton = document.querySelector('.show-btn'); 
+const filterPopup = document.querySelector('.filter-popup'); 
+
+showResultsButton.addEventListener('click', function() {
+    filterPopup.classList.remove('active'); 
+    filterProducts(); 
+});
+
+
+//----------------------------------------------------------------------------------------------------------------
+sortingOptions.forEach(option => {
+    option.addEventListener('click', function() {
+        sortingOptions.forEach(opt => opt.classList.remove('active'));
+
+
+        this.classList.add('active');
+
+        const sortType = this.getAttribute('data-sort');
+        currentSortOrder = sortType; 
+        
+        const filteredProducts = filterProducts();
+        const productsToDisplay = filteredProducts.length > 0 ? filteredProducts : allProducts;
+
+        sortProducts(productsToDisplay);
+        displayProducts(productsToDisplay);
+        
+    });
+});
+
+// --------------------------------------------------------------------------------------------------------------------
+loadProductData(); 
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.fltr-cntnt'); 
+    const containers = document.querySelectorAll('.filter-brand-container'); 
+
+
+    containers.forEach(container => {
+        container.style.display = 'none';
+    });
+
+    const defaultContainer = document.querySelector('.brand-container');
+    if (defaultContainer) {
+        defaultContainer.classList.add('active');
+    }
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const target = this.getAttribute('data-target'); 
+            console.log('Button clicked:', target); 
+
+           
+            containers.forEach(container => {
+                container.classList.remove('active'); 
+            });
+
+
+            const targetContainer = document.querySelector(`.${target}`);
+            console.log('Target container:', targetContainer);
+
+            if (targetContainer) {
+                targetContainer.classList.add('active') 
+            } else {
+                console.warn('Target container not found:', target); 
+            }
+        });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const filterToggle = document.getElementById('filterToggle');
+    const filterPopup = document.querySelector('.filter-popup');
+    const closePopup = document.getElementById('closePopup'); 
+
+   
+    filterToggle.addEventListener('click', function() {
+        filterPopup.classList.toggle('active'); 
+    });
+
+    
+    closePopup.addEventListener('click', function(event) {
+        event.preventDefault();
+        filterPopup.classList.remove('active');
+    });
+});
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+

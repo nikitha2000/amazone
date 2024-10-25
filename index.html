@@ -574,7 +574,7 @@
                                 <div class="scroll-content1">
                                     <a href="#" class="scroll-a">
                                         <div class="prime-icon">
-                                            <i class="prime-i"></i>
+                                            <i class="prime-ic"></i>
                                         </div>
                                         <span class="prime-btn"></span>
                                     </a>
@@ -605,13 +605,13 @@
                                     </a>
                                 </div>
                              </div>
-                             <div class="right-filter" id="rightFilter">
+                             <div class="right-filter" id="filterToggle">
                                  <div class="right-filter-container">
                                     <span class="right-filter-span">
                                         <span class="right-filter-content">
                                             <div class="button-inner">
                                                 <button class="fltr-btn-txt">
-                                                    <div class="sf-rib-btn">
+                                                    <div class="sf-rib-btn" id="">
                                                         <span class="clr-bs">Filters (1)</span>
                                                         <span class="clr-bs-triangle"></span>
                                                     </div>
@@ -625,9 +625,232 @@
                        </span>
                    </div>
                </div>
+               <div class="mb-rslt-hdr">
+                  <div class="rslt-hdr-container">
+                    <div class="rslt-hdr-content">
+                        <div class="rslt-section">
+                            <div class="outline-sno">
+                                <div class="a-size-mini">
+                                    <div class="rslt-text">Check each product page for other buying options.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="mob-repeat-container" id="mobRepeat">
+               </div>
             </div>
         </div>
     </div>
+    
+    <div class="filter-popup">
+        <div class="popup-container">
+            <div class="popup-content">
+                <div class="popup-marb">
+                    <div class="margin-menu">
+                        <div claas="menu-content">
+                            <div class="filter-header">
+                                <div class="filter-left">
+                                    <div class="filtr-text1">Filters (1)</div>
+                                </div>
+                                <div class="filtr-right">
+                                    <span class="right-span">
+                                        <a href="#" class="right-a" id="closePopup">
+                                            <div class="filtr-right-text">Close</div>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="filter-body">
+                                <div class="filter-body-left">
+                                    <div class="fltr-cntnt brands" data-target="brand-containers">
+                                        <span class="fltrspn">
+                                            <div class="filter-relt">
+                                                <div class="filter-base">Brands</div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="fltr-cntnt sortby" data-target="sortby-container">
+                                        <span class="fltrspn">
+                                            <div class="filter-relt">
+                                                <div class="filter-base">sortby</div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="fltr-cntnt">
+                                        <span class="fltrspn">
+                                            <div class="filter-relt">
+                                                <div class="filter-base">Prime & Delivery</div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="fltr-cntnt">
+                                        <span class="fltrspn">
+                                            <div class="filter-relt">
+                                                <div class="filter-base">catergory</div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="fltr-cntnt">
+                                        <span class="fltrspn">
+                                            <div class="filter-relt">
+                                                <div class="filter-base">Price and Deals</div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="fltr-cntnt">
+                                        <span class="fltrspn">
+                                            <div class="filter-relt">
+                                                <div class="filter-base">Customer Reviews</div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="fltr-cntnt">
+                                        <span class="fltrspn">
+                                            <div class="filter-relt">
+                                                <div class="filter-base">Item Condition</div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="fltr-cntnt">
+                                        <span class="fltrspn">
+                                            <div class="filter-relt">
+                                                <div class="filter-base">Cellular Technology</div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="filter-body-right">
+                                    <div class="filter-brand-container brand-containers active">
+                                        <div class="filter-brand-section">
+                                            <div class="filter-brandtxt">
+                                                <div class="ref-brn">
+                                                    <span class="ed-brnd">Brands</span>
+                                                </div>
+                                                <div class="ref-brnds">
+                                                    <span class="declr"></span>
+                                                </div>
+                                            </div>
+                                            <div class="spc-names">
+                                                <div class="alph">
+                                                    <span class="alphb">A - Z</span>
+                                                </div>
+                                                <div class="alph-section">
+                                                    <div class="alphsec">
+                                                        <a href="#" class="amzn-a" data-brand="Samsung">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">Samsung</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-brand="Apple">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">Apple</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-brand="realme">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">realme</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-brand="Redmi">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">Redmi</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-brand="OnePlus">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">OnePlus</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-brand="POCO">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">POCO</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-brand="iQOO">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">iQOO</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-brand-container sortby-container">
+                                        <div class="filter-brand-section">
+                                            <div class="filter-brandtxt">
+                                                <div class="ref-brn">
+                                                    <span class="ed-brnd">Sort by</span>
+                                                </div>
+                                                <div class="ref-brnds">
+                                                    <span class="declr"></span>
+                                                </div>
+                                            </div>
+                                            <div class="spc-names">
+                                                <div class="alph-section">
+                                                    <div class="alphsec">
+                                                        <a href="#" class="amzn-a" data-sort="others">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">Featured</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-sort="lowToHigh">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">Price:Low to High</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-sort="highToLow">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">Price:High to Low</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-sort="others">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">Avg:Customer Review</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-sort="others">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">Newest Arrivals</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="amzn-a" data-sort="others">
+                                                            <div class="a-section">
+                                                                <span class="sml-clr-sec">Best Sellers</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-apply">
+                                <div class="filter-apply-container">
+                                    <div class="filter-apply-content">
+                                        <div class="clear-btn">
+                                            <span class="clear-btn-container">
+                                                <span class="clear-text">Clear Filters</span>
+                                            </span>
+                                        </div>
+                                        <div class="show-btn">
+                                            <div class="show-btn-container">
+                                                <span class="show-text">Show results</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
 
     <script src="script.js"></script>
@@ -635,3 +858,4 @@
 </html>
 
 
+<p>mkj</p>
